@@ -1,49 +1,69 @@
-//usando Destructuracion
-import {Text, View,Button} from "react-native";
-import React,{useState} from 'react';
+import { View, Text, Button, StyleSheet } from "react-native";
+import React, { useState } from 'react';
 
-export const Perfil =({nombre,carrera,materia,cuatri})=>{
 
-    const [mostrar,setMostrar] = useState(false) 
 
-    return(
-        
-        <View>
+export const Perfil = ({ nombre, carrera, materia, cuatri, estiloExt }) => {
+    const [mostrar, setMostrar] = useState(false)
 
-        <Text>{nombre}</Text>
+    return (
 
-        {/* Renderizado condicional */}
-        
-        { mostrar &&  
-        <> 
-        <Text>{carrera}</Text>
-        <Text>{materia}</Text>
-        <Text>{cuatri}</Text> 
-        </>
-        }
-        <Button title="Mostar Perfil" onPress={()=>setMostrar(!mostrar)}></Button>
+        <View style={[styles.tarjeta, estiloExt]}>
+            <Text style={styles.nombre}> {nombre}</Text>
+
+
+            {/* Renderizado condicional */}
+            {mostrar &&
+                <>
+                    <Text style={styles.carrera}>{carrera}</Text>
+                    <Text style={styles.otroTexto}>{materia}</Text>
+                    <Text style={styles.otroTexto}>{cuatri}</Text>
+                </>
+            }
+            <Button title="Mostar Perfil" onPress={() => setMostrar(!mostrar)} />
         </View>
-
     )
 }
 
 
-//Perfil usando props
-// import {Text, View} from "react-native";
 
-// export const Perfil =(props)=>{
+/* export const Perfil = (props) => {
 
+    return (
 
-//     return(
-        
-//         <View>
+        <View>
+            <Text>{props.nombre}</Text>
+            <Text>{props.carrera}</Text>
+            <Text>{props.materia}</Text>
+            <Text>{props.cuatri}</Text>
+        </View>
+    )
+}
+ */
 
-//         <Text>{props.nombre}</Text>
-//         <Text>{props.carrera}</Text>
-//         <Text>{props.materia}</Text>
-//         <Text>{props.cuatri}</Text>
+const styles = StyleSheet.create({
+    nombre: {
+        fontSize: 24,
+        fontWeight: 600,
+        textTransform: 'uppercase'
 
-//         </View>
+    },
+    carrera: {
+        fontSize: 18,
+        color: 'blue',
+        fontFamily: 'Roboto'
 
-//     )
-// }
+    },
+    otroTexto: {
+        fontSize: 12,
+        fontFamily: 'Courier',
+        fontStyle: 'italic'
+
+    },
+    tarjeta: {
+        borderWidth: 2,
+        padding: 25,
+        margin: 15
+
+    }
+});
