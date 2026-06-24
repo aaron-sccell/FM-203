@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import {
   StyleSheet,
@@ -102,7 +101,7 @@ export default function FlatListSectionListScreen() {
   );
 }
 
-const styles = StyleSheet.create({
+ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
@@ -145,4 +144,22 @@ const styles = StyleSheet.create({
   },
   item: {
     flexDirection: 'row',
-    justifyContent
+    justifyContent: 'space-between',
+    paddingVertical: 12,
+    paddingHorizontal: 10,
+  },
+  itemText: {
+    fontSize: 16,
+  },
+  separator: {
+    height: 1,
+    backgroundColor: '#a10101',
+  },
+  footer: {
+    textAlign: 'center',
+    paddingVertical: 12,
+    fontWeight: 'bold',
+  },
+
+
+});
