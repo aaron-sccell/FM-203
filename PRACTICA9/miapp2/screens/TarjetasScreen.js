@@ -17,14 +17,7 @@ export default function TarjetasScreen() {
       <Text>------------ Componente Perfil -----------</Text>
 
       <Perfil
-        nombre="Eduardo Gutierrez Rodriguez"
-        carrera="Ingeniería en Sistemas"
-        materia="Programación Móvil"
-        cuatri="9"
-      />
-
-      <Perfil
-        nombre="Amparo Rodriguez Arrendondo"
+        nombre="Andres Rangel Martinez"
         carrera="Ingeniería en Sistemas"
         materia="Programación Móvil"
         cuatri="9"

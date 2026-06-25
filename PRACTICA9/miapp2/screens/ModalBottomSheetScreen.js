@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function ModalBottomSheetScreen() {
   return (
     <View style={styles.container}>
-      <Text>Modal & Bottom Sheet Screen</Text>
+      <Text>FlatList & SectionList Screen</Text>
       <StatusBar style="auto" />
     </View>
   );

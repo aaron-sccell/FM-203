@@ -27,9 +27,9 @@ export default function SafeAreaScreen() {
         <View style={styles.tarjeta}>
           <Text style={styles.subtitulo}>Integrantes</Text>
           <Text style={styles.texto}>
-            Rafael Baltazar Bonifacio{"\n"}
-            María Cruz Camargo Araujo{"\n"}
-            Gabriel Iván Villafuerte Armenta
+            Andres Rangel Martinez{"\n"}
+            Aaron Sanchez Cervantes{"\n"}
+            Eduardo Gutierrez Rodriguez
           </Text>
         </View>
 
@@ -37,7 +37,7 @@ export default function SafeAreaScreen() {
         <View style={styles.tarjeta}>
           <Text style={styles.subtitulo}>Hobbies</Text>
           <Text style={styles.texto}>
-            Ver videos{"\n"}
+            Ver series{"\n"}
             Videojuegos{"\n"}
             Jugar fútbol
           </Text>
@@ -77,8 +77,8 @@ export default function SafeAreaScreen() {
         <View style={styles.tarjeta}>
           <Text style={styles.subtitulo}>Equipos Favoritos</Text>
           <Text style={styles.texto}>
-            Cruz Azul{"\n"}
-            Chivas
+            Necaxa{"\n"}
+            Toros Neza
           </Text>
         </View>
 
@@ -86,9 +86,9 @@ export default function SafeAreaScreen() {
         <View style={styles.tarjeta}>
           <Text style={styles.subtitulo}>Películas Favoritas</Text>
           <Text style={styles.texto}>
-            La Monja{"\n"}
-            El Conjuro {"\n"}
-            Annabelle
+            Huye{"\n"}
+            Scary Movie {"\n"}
+            Meteoro
           </Text>
         </View>
 

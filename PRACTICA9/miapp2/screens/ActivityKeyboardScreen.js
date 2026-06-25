@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function ActivityKeyboardScreen() {
   return (
     <View style={styles.container}>
-      <Text>ActivityIndicator & KeyboardAvoidingView</Text>
+      <Text>FlatList & SectionList Screen</Text>
       <StatusBar style="auto" />
     </View>
   );

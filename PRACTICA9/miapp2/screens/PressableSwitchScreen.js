@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, Switch, Pressable, Alert } from 'react-native';
 
-export default function PressableScreen() {
+export default function PressableSwitchScreen() {
   // 1. MANEJO DE STATE (Estado para el Modo Oscuro)
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -16,7 +16,6 @@ export default function PressableScreen() {
         Ajustes del Sistema
       </Text>
 
- 
       {/* --- COMPONENTE 1: SWITCH --- */}
       <View style={styles.row}>
         <Text style={[styles.label, isDarkMode ? styles.textDark : styles.textLight]}>

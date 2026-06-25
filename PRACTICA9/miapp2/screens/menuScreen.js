@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View, Button } from 'react-native';
+import { StyleSheet, View, Button ,Text } from 'react-native';
 import React, { useState } from 'react';
 import TarjetasScreen from './TarjetasScreen';
 import SafeAreaScreen from './safeAreaScreen';
@@ -10,7 +10,7 @@ import ImageBackgroundSplashScreen from './ImageBackgroundSplashScreen';
 import ActivityKeyboardScreen from './ActivityKeyboardScreen';
 import ModalBottomSheetScreen from './ModalBottomSheetScreen';
 
-export default function MenuScreen() {
+export default function menuScreen() {
   const [screen, setScreen] = useState('menu');
 
   switch (screen) {
@@ -21,22 +21,22 @@ export default function MenuScreen() {
       return <SafeAreaScreen />;
 
     case 'pressableSwitch':
-  return <PressableSwitchScreen />;
+        return <PressableSwitchScreen />;
 
-  case 'textInputAlert':
-    return <TextInputAlertScreen />;
+    case 'textInputAlert':
+        return <TextInputAlertScreen />;
 
-  case 'flatListSectionList':
-    return <FlatListSectionListScreen />;
+    case 'flatListSectionList':
+        return <FlatListSectionListScreen />;
 
-  case 'imageBackgroundSplash':
-    return <ImageBackgroundSplashScreen />;
+    case 'imageBackgroundSplash':
+        return <ImageBackgroundSplashScreen />;
 
-  case 'activityKeyboard':
-    return <ActivityKeyboardScreen />;
+    case 'activityKeyboard':
+        return <ActivityKeyboardScreen />;
 
-  case 'modalBottomSheet':
-    return <ModalBottomSheetScreen />;
+    case 'modalBottomSheet':
+        return <ModalBottomSheetScreen />;
 
     case 'menu':
     default:

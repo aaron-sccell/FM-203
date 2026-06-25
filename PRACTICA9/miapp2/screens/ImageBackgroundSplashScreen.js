@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function ImageBackgroundSplashScreen() {
   return (
     <View style={styles.container}>
-      <Text>ImageBackground & SplashScreen</Text>
+      <Text>FlatList & SectionList Screen</Text>
       <StatusBar style="auto" />
     </View>
   );
